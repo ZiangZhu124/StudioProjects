@@ -10,3 +10,53 @@ body{
     background-color:#000000;
     padding:30px;
 }
+
+h1.page-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#FFFFFF;
+    font-size: 125px;
+    
+}
+
+h4.page-author{
+    color:#FFFFFF;
+	font-family: 'Inter', sans-serif;
+    opacity: .5;
+    font-size:20px;
+    margin-top: 3px;
+}
+
+h4.page-book{
+    color:#FFFFFF;
+	font-family: 'Inter', sans-serif;
+    opacity: .5;
+    font-size:20px;
+    margin-top: 30px;
+}
+
+h4.page-instruct{
+    color:#FFFFFF;
+	font-family: 'Inter', sans-serif;
+    opacity: .5;
+}
+
+
+.title-wrapper{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title-wrapper{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
