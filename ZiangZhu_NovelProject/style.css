@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
@@ -11,22 +11,28 @@ body{
     padding:30px;
 }
 
+
 h1.page-title{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     color:#FFFFFF;
     font-size: 125px;
-    
+    animation-name: titlecard;
+    animation-duration: 3s;
 }
 
-h4.page-author{
-    color:#FFFFFF;
-	font-family: 'Inter', sans-serif;
-    opacity: .5;
-    font-size:20px;
-    margin-top: 3px;
-}
+@keyframes titlecard {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: 1; 
+      }
+    }
+
+
+
 
 h4.page-book{
     color:#FFFFFF;
@@ -34,13 +40,127 @@ h4.page-book{
     opacity: .5;
     font-size:20px;
     margin-top: 30px;
+    animation-name: bookcard;
+    animation-duration: 4s;
 }
+
+
+@keyframes bookcard {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: .5; 
+      }
+    }
+
+
+
+h4.page-author{
+    color:#FFFFFF;
+	font-family: 'Inter', sans-serif;
+    opacity: .5;
+    font-size:20px;
+    margin-top: 3px;
+    animation-name: authorcard;
+    animation-duration: 5s;
+    
+}
+
+
+@keyframes authorcard {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: .5; 
+      }
+    }
+
+
 
 h4.page-instruct{
     color:#FFFFFF;
 	font-family: 'Inter', sans-serif;
-    opacity: .5;
+    font-size:20px;
+    opacity:.5;
+    text-align:center;
+    animation-name: begincard;
+    animation-duration: 6s;
+    transition: opacity 0.5s ease;
 }
+
+
+a{
+    color:#FFFFFF;  
+    text-decoration: none;
+}
+
+.page-instruct:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@keyframes begincard {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: .5; 
+      }
+    }
+
+
+    
+    
+    h4.page-press{
+        color:#FFFFFF;
+        font-family: 'Inter', sans-serif;
+        font-size:20px;
+        opacity:.5;
+        text-align:center;
+        animation-name: readcard;
+        animation-duration: 4s;
+        transition: opacity 0.5s ease;
+    }
+    
+    
+    .page-press:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    @keyframes readcard {
+        from {
+            opacity: 0; 
+          }
+          to {
+            opacity: .5; 
+          }
+        }
+
+
+
+
+.story-paragraph{
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-style: normal;
+color:#FFFFFF;
+font-size: 35px;
+animation-name: textcard;
+animation-duration: 2s;
+transition: opacity 0.3s ease;
+}
+
+@keyframes textcard {
+    from {
+        opacity: 0; 
+      }
+      to {
+        opacity: 1; 
+      }
+    }
 
 
 .title-wrapper{
@@ -52,11 +172,13 @@ h4.page-instruct{
 }
 
 
-.title-wrapper{
-    height:100%;
+
+.story{
+    height:100vh;
+    max-width: 58%;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 0 auto; 
 }
-
-
